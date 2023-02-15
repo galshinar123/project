@@ -1,0 +1,54 @@
+Module:
+•	csvtojson
+•	express
+•	body-parser
+•	pug
+•	nodemon
+•	mysql2
+•	cors
+
+Installation
+1. clone this repo <replace with your repo link>
+2. make sure you have mySqlServer installed and running
+3. configure your dB with user name and password
+4. Add inside dB folder a file called config.db.js paste this object and fill in your details
+<paste here the config object with placeholders>
+5. run npm i to install dependencies
+6. To run the server run
+- npm run dev - for development mode
+- npm start - for reading 
+7. Go to http://localhost:3000 on your browser
+
+To insert default data you will need to follow those steps:
+1. go to http://localhost:3000/CreateTables - to create the relevant tables
+2. Go to http://localhost:3000/InsertDataInTables - to insert the data.
+
+ API Endpoints
+•	/CreateTable : creates the table
+•	/InsertData2Table : insert the data into the table
+•	/DropTable : drop the table
+•	/getUsers: watch the table Users
+•	/showAllskills: watch the table SkillsData
+•	/home : the index page
+•	/Menu : the page with some of the skills divided by types
+•	/begginers : the page with all the skills how defined as a beginner skill
+•	/Sign-up : the page with all the information for signing up. All the new users are inserted for a table named Users.
+•	/Log-in : the page with all the information for logging in. If a user does not found in the Users data, he will be move to a page that says that his data is wrong.
+•	/skillStatus : page with all the skills and the information if the user finished his goal for the skill or not.
+
+Create Tables
+'CREATE TABLE SkillsData (
+skillName VARCHAR(50), 
+skillDes VARCHAR(1000), 
+Workout VARCHAR(200), 
+skillGoals VARCHAR(100), 
+skillimg VARCHAR(255), 
+yourLevel VARCHAR(100)) 
+ENGINE=InnoDB DEFAULT CHARSET=utf8';
+ 
+CREATE TABLE `users` (
+  `UserName` varchar(200) NOT NULL,
+  `UserEmail` varchar(200) NOT NULL,
+  `UserPassword` varchar(200) NOT NULL,
+  `skilStatus` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

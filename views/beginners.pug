@@ -1,0 +1,25 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/Style.css')
+  script(src='../static/Project.js')
+  title Menu
+.topnav
+  a.topnav(href='/Home-page') Home
+  a.topnav(href='/Sign-up') Sign-up
+  a.topnav(href='/log-in') Log-in
+  a.topnav(href='/Skills-status') Skill status
+.bg-image
+  img(src='https://gymbeam.com/blog/wp-content/uploads/2021/06/featured-41.png' alt='')
+#skills.skillsHeader
+  h1
+    | what skill do you want to practice ?
+.menuCon
+#Beginners.bar
+each val in beginners
+  a(href=`/${val.skillName}`)
+    button.button #{val.skillName} 
+ 
+

@@ -1,0 +1,45 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=SS, initial-scale=1.0')
+  link(rel='stylesheet' href='/Style.css')
+  script(defer='' src='../static/Project.js')
+  title Sign-up
+.topnav
+  a.topnav(href='/Home-page') Home
+  a.topnav(href='/Sign-up') Sign-up
+  a.topnav(href='/log-in') Log-in
+  a.topnav(href='/Skills-status') Skill status
+.containersignup
+  dive
+    .section1
+      h1 Sign Up
+      h5 Welcome to our - sport world
+      form(action='/SignUp' method='post')
+        div
+          p
+            label(for='userNmae') User Name
+          input#userName.userName(type='text' name ='UserName' autocomplete='off')
+        div
+          p
+            label(for='email') Email Address
+          input#email.email(type='email' name='UserEmail' required='' autocomplete='off')
+        div
+          p
+            label(for='password') Password
+          input#password.passward(type='password' name='UserPassword' required='')
+        button#btn(type='submit') Sign Up Now
+        p
+          | Already a member? 
+          a(href='/log-in') Log in
+      div
+        h6 Or Connect With US streetWorkout@gmail.com 
+        div
+          i
+        div
+          i
+        div
+          i
+  .section2
+    img(src='https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/man-doing-pull-ups-royalty-free-image-684451322-1555509818.jpg' alt='signupimg' height='400px')

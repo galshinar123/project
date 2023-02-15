@@ -46,16 +46,6 @@ body{
     text-align: center;
   }
 
-  /* .btn menu {
-    border: none;
-    background-color: initial;
-    color: white;
-    padding: 10px 20px;
-    font-size: 14px;
-    cursor: pointer;
-    display: inline-block;
-  } */
-
   .btn:hover, .smallbutton:hover{color: gold;}
 
   .button {
@@ -90,7 +80,7 @@ body{
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -106,7 +96,7 @@ body{
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -122,7 +112,7 @@ body{
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -510,25 +500,10 @@ h6{
     padding-top: 15%;
     display: grid;
     grid-template-areas: 
-    'squat' 'pushups' 'pullups' 'dips' 'handstand' 'muscleup' 'pistolsquat' 'planche' 'frontlever' 
+    'pullups' 'pushups' 'dips' 'handstand' 'muscleup' 'pistolsquat' 'planche' 'frontlever' 'backlever' 
 ;
   }
 }
-
-/* @media only screen and (max-width: 1000px) {
-  .skillcon{
-    display: grid;
-    grid-template-areas: 
-    'squat pushups'
-    'pullups dips'
-    'handstand muscleup'
-    'pistolsquat planche'
-    'frontlever frontlever'
-    ;
-    position: relative;
-    padding-top: 5%;
-  }
-} */
 
 .checkbox {
   background-color: red; 
@@ -545,12 +520,7 @@ h6{
   font-size: 25px;
 }
 
-#DIPcheck {
-  background-color:green; 
-  background-color:green; 
-}
-
-#FLcheck {
+#PUScheck {
   background-color:green; 
   background-color:green; 
 }

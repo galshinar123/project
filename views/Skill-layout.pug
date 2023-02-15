@@ -1,0 +1,33 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/Style.css')
+  script(src='../static/Project.js')
+  title Skill
+.topnav
+  a.topnav(href='/Home-page') Home
+  a.topnav(href='/Sign-up') Sign-up
+  a.topnav(href='/log-in') Log-in
+  a.topnav(href='/Skills-status') Skill status
+#skills.skillsHeader
+  h1 #{skillName}
+.description
+  h2 #{skillDes}
+  br
+  br
+  h2 #{Workout}
+  br
+  h2 #{skillGoals}
+  form(action="/completed" method="post")
+  button(type='submit')
+    | completed!
+.image
+  img(src='skillimg' alt='' height='400px')
+.menu.return
+  a(href='/Menu')
+    button.return Menu
+
+
+
